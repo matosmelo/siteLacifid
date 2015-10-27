@@ -1,0 +1,18 @@
+<?
+//variaveis recebidas
+$Nome = $_POST['nome'];
+$Email = $_POST['email'];
+$Mensagem = $_POST['mensagem'];
+//criando o corpo do e-mail
+$msg = "Nome: $Nome
+		E-mail: $Email
+		Mensagem: $Mensagem
+";
+
+//validação de envio, caso a informação não seja enviada por algum problema a condição irá redirecionar para erro_envio.html, caso a informação seja enviada a condição exibirá o arquivo agradece.html
+if(@mail("hjavier@dfn.if.usp.br","Contatos do site", $msg)){
+header("Location:agradece.html");
+}else{
+header("Location:erro_envio.html")
+}
+?>

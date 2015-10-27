@@ -1,0 +1,361 @@
+body {
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	font-size:11px;
+	align:center;
+	background-color: #333;
+	padding:0;
+	text-align:left;
+	margin: 0 auto;
+	behavior: url(csshover.htc); /* call hover behaviour file */
+    }
+
+A:link {
+	COLOR: #175468; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+
+#contenedor {
+	background-color:#E2E9E4;
+	width:800px;
+	align:center;
+	margin: 0 auto;
+	border-width: 1px;
+	border-color: #000000;
+	border-style: solid;
+}
+	
+#menusuperior {
+	width:800px;
+	position:relative;
+	margin-top: 0px;
+	margin-left: 0px;}
+
+/*Menu superior*/
+/*globalnav*/
+#globalnav {
+	position:relative;
+	float:right;
+	width:790px;
+	padding:0 0 1.75em 1em;
+	margin:0;
+	list-style:none;
+	line-height:1em;
+}
+#globalnav LI {
+	float:right;
+	margin:0;
+	padding:0;
+}
+#globalnav A {
+	display:block;
+	color:#000;
+	text-decoration:none;
+	background:#ddd;
+	margin:0;
+	padding:0.25em 1em;
+	border-left:1px solid #fff;
+	border-top:1px solid #fff;
+	border-right:1px solid #aaa;
+}
+#globalnav A:hover,
+#globalnav A:active,
+#globalnav A.here:link,
+#globalnav A.here:visited {
+	background:#bbb;
+}
+#globalnav A.here:link,
+#globalnav A.here:visited {
+	position:relative;
+	z-index:102;
+}
+
+/*subnav*/
+
+#globalnav UL {
+	position:absolute;
+	left:0;
+	top:1.5em;
+	float:right;
+	background:#bbb;
+	width:790px;
+	margin:0;
+	padding:0.25em 0.25em 0.25em 0.75em;
+	list-style:none;
+	border-top:1px solid #fff;
+}
+
+#globalnav UL LI {
+	float:right;
+	display:block;
+	margin-top:1px;
+}
+
+#globalnav UL A {
+	background:#bbb;
+	color:#000;
+	display:inline;
+	margin:0;
+	padding:0 1em;
+	border:0
+}
+
+#globalnav UL A:hover,
+#globalnav UL A:active,
+#globalnav UL A.here:link,
+#globalnav UL A.here:visited {
+	color:#a00;
+}
+
+/*Fim del menu superior*/
+
+
+#leftcol {
+	width:120px;
+	float:left;
+	height:auto;
+	text-align:justify;
+	}
+#principal {
+	width:350px;
+	float:left;
+	margin-left:100px;
+	text-align:justify;
+	border-width: 1px;
+	padding:10px;
+	border-color: #000000;
+	border-style: solid;
+	}
+#principal2 {
+	float:left;
+	width:648px;
+	height:auto;
+	margin-left:10px;
+	margin-top:1px;
+	text-align:justify;
+	border-width: 1px;
+	padding:10px;
+	padding-top:5px;
+	border-color: #000000;
+	border-style: solid;
+	}
+#principal2 h3 {
+	font-size:14px;
+	text-align:left;
+	color:#fff;
+	background:#bbb;
+	padding: 3px 3px  3px;
+	border:0;
+}
+h1 {
+	font-size:15px;
+	text-align:left;
+	color:#fff;
+	background:#175468;
+	padding: 3px 3px  3px;
+	border:0;	
+}
+
+strong {
+	font-size:13px;
+	text-align:left;
+	color:#fff;
+	background:#bbb;
+	padding: 0px 3px  3px;
+	border:0;
+}
+
+#principal2 p {
+	font-family: Verdana, Arial, Sans-serif;
+	color: #000;
+}
+#principal2 a {
+	color: #175468;
+	text-decoration:none;
+}
+
+#rightcol {
+	width:270px;
+	float:right;
+	padding: 5px;
+	}
+#avisos1 {
+	width:260px;
+	position:relative;
+	float:left;
+	padding: 0 0 0 0;
+	}
+#avisos2 {
+	width:260px;
+	position:relative;
+	float:left;
+	padding: 0 0 0 0;
+	margin-top:10px;
+	}	
+	
+#cristal {
+	align:center;
+	}
+
+
+/* inicio menu izquierda*/
+#menu {
+width: 110px;
+background:#ddd;
+} 
+#menu ul { /* remove bullets and list indents */
+list-style: none;
+margin: 0;
+padding: 0;
+}
+/* style, color and size links and headings to suit */
+#menu a {
+display: block;
+border-width: 1px;
+border-style: solid;
+border-color: #ccc #888 #555 #bbb;
+margin: 0;
+padding: 2px 3px;
+color: #000;
+background: #efefef;
+text-decoration: none;
+}
+#menu li {
+/* make the list elements a containing block for the nested lists */
+position: relative;
+} 
+#menu ul li {
+float: left; /* cure IE5.x "whitespace in lists" problem */
+width: 100%;
+}
+#menu a:hover {
+color: #a00;
+background: #fff;
+}
+/* fim menu izquierda*/
+
+
+#rodape {
+	position:inherit;
+	clear:both;
+	text-align:center;
+	padding:10px;
+	font-size:10px;
+	}
+
+#datos {
+	width:450px;
+	float:left;
+	margin-top:10px;
+	text-align:justify;
+}
+
+#fotos {width: 180px;
+	float:right;
+	margin-top:10px;
+}
+.gente {margin-top:0px;
+ma
+}
+
+.gente td {background:#fff;
+		   border:1px solid #bbb;
+}
+
+/*Galeria de Fotos*/
+
+#principalfotos {
+	float:left;
+	width:608px;
+	margin-left:10px;
+	text-align:justify;
+	border-width: 1px;
+	padding:10px;
+	border-color: #000000;
+	border-style: solid;
+	}
+
+.galeria {
+	width:610px; 
+	margin:0 auto;
+	text-align:left; 
+	}
+.img-aqui { 
+	background: #fff url('images/cadinho.jpg') center no-repeat; 
+	width:430px; 
+	height:323px; 
+	position:relative; 
+	top:8px;
+	float:right; 
+	border:1px solid #fff;
+	}
+ul.fotos {
+	position:relative;
+	list-style:none;  
+	width:162px;
+	padding:1px;
+	background:#999;
+	margin:0; 
+	padding:0; 
+}
+.fotos:after {
+	display: block;
+	content: ".";
+	height: 0;
+	font-size:0; 
+	visibility: hidden;
+	clear: both;
+	}
+ul.fotos li {
+	width:75px;
+	height:50px;
+	float:left; 
+	border:2px solid #444;
+	margin:1px; 
+}
+ul.fotos li img {
+	border:none; 
+	width:75px;
+	height:50px;
+}
+ul.fotos li span img {
+	border:none;
+	width:430px;
+	height:323px;
+	height:auto;
+}
+ul.fotos a {
+	display: block;
+	} 
+ul.fotos a span {
+	display: none;
+}
+ul.fotos a:hover span.legenda {
+	display: block;
+	text-align:center; 
+	width:430px;
+	position:absolute;
+	top:323px;
+	left:-2px;
+}
+ul.fotos a:hover span {
+	display: block;
+    position: absolute; 
+	top:-5px; 
+	left: 177px; 
+	background:#fff;
+	border:2px solid #666;
+   }
+ul.fotos a:hover span.legenda {
+	padding:5px 0;
+	color:#333; 
+}
+
+

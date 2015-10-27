@@ -1,0 +1,248 @@
+#
+# An unexpected error has been detected by HotSpot Virtual Machine:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x6d70f23c, pid=272, tid=2084
+#
+# Java VM: Java HotSpot(TM) Client VM (1.5.0_11-b03 mixed mode)
+# Problematic frame:
+# V  [jvm.dll+0xcf23c]
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0288ca58):  VMThread [id=2084]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x0871b364
+
+Registers:
+EAX=0x0871b360, EBX=0x00000000, ECX=0x00001b85, EDX=0x6d779060
+ESP=0x0d21fbc0, EBP=0x0d21fbfc, ESI=0x090a02f0, EDI=0x6d7bd518
+EIP=0x6d70f23c, EFLAGS=0x00010202
+
+Top of Stack: (sp=0x0d21fbc0)
+0x0d21fbc0:   0871b360 6d70f20b 6d7bd518 6d70f46b
+0x0d21fbd0:   6d7c1a14 6d757f07 6d7c1a14 6d7bd518
+0x0d21fbe0:   02724548 6d6afabd 6d7bd518 00000000
+0x0d21fbf0:   00000001 02724548 00000000 0d21fc64
+0x0d21fc00:   6d6b0dac 00000001 00000000 00000001
+0x0d21fc10:   00000002 6d7bd518 6d7bd518 00000001
+0x0d21fc20:   02724548 00000000 00000000 00000001
+0x0d21fc30:   00000001 0d21fcbc 00000000 00000000 
+
+Instructions: (pc=0x6d70f23c)
+0x6d70f22c:   83 38 00 74 18 ff 08 8b 08 8b 40 08 8b 04 88 50
+0x6d70f23c:   8b 48 04 83 c1 08 8b 11 ff 52 60 eb de c3 e9 00 
+
+
+Stack: [0x0d120000,0x0d220000),  sp=0x0d21fbc0,  free space=1022k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0xcf23c]
+V  [jvm.dll+0x70dac]
+V  [jvm.dll+0x70b28]
+V  [jvm.dll+0x74196]
+V  [jvm.dll+0x10f2eb]
+V  [jvm.dll+0x6f8ba]
+V  [jvm.dll+0x51d3e]
+V  [jvm.dll+0x6fa5c]
+V  [jvm.dll+0x12a230]
+V  [jvm.dll+0x129cfe]
+V  [jvm.dll+0x129ea7]
+V  [jvm.dll+0x129c0c]
+C  [msvcrt.dll+0x2a3b0]
+C  [kernel32.dll+0xb50b]
+
+VM_Operation (0x14e8f9c4): generation collection for allocation, mode: safepoint, requested by thread 0x0fa2e4e0
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x02ba6178 JavaThread "Thread-276" [_thread_blocked, id=2644]
+  0x0fbfd1c0 JavaThread "thread applet-JCapplet.class" [_thread_blocked, id=1796]
+  0x1212e7b8 JavaThread "Thread-272" [_thread_blocked, id=2944]
+  0x121310c8 JavaThread "thread applet-JCapplet.class" [_thread_blocked, id=2344]
+  0x0f6936a8 JavaThread "Thread-263" [_thread_blocked, id=3840]
+  0x12162bf0 JavaThread "thread applet-JCapplet.class" [_thread_blocked, id=3076]
+  0x0fa2e4e0 JavaThread "Thread-259" [_thread_blocked, id=228]
+  0x02eac828 JavaThread "thread applet-JCapplet.class" [_thread_blocked, id=3192]
+  0x02cceb58 JavaThread "Thread-255" [_thread_blocked, id=3744]
+  0x0f80cb00 JavaThread "thread applet-JCapplet.class" [_thread_blocked, id=3352]
+  0x0f45a488 JavaThread "Thread-251" [_thread_blocked, id=3912]
+  0x0f106440 JavaThread "thread applet-JCapplet.class" [_thread_blocked, id=3540]
+  0x0f59ae68 JavaThread "Thread-247" [_thread_blocked, id=3248]
+  0x0f5b37c0 JavaThread "thread applet-JCapplet.class" [_thread_blocked, id=2412]
+  0x0fadeca0 JavaThread "Thread-243" [_thread_blocked, id=2060]
+  0x0ec9da58 JavaThread "thread applet-JCapplet.class" [_thread_blocked, id=2432]
+  0x0f7b5150 JavaThread "Thread-239" [_thread_blocked, id=380]
+  0x0fb507c0 JavaThread "thread applet-JCapplet.class" [_thread_blocked, id=2612]
+  0x0ede64b8 JavaThread "Thread-230" [_thread_blocked, id=948]
+  0x0ef27a48 JavaThread "thread applet-JCapplet.class" [_thread_blocked, id=2308]
+  0x0ee91af8 JavaThread "Thread-226" [_thread_blocked, id=3168]
+  0x0f0cfb98 JavaThread "thread applet-JCapplet.class" [_thread_blocked, id=3624]
+  0x0218c740 JavaThread "Thread-222" [_thread_blocked, id=3988]
+  0x02b6c168 JavaThread "thread applet-JCapplet.class" [_thread_blocked, id=1056]
+  0x02c890b0 JavaThread "Thread-218" [_thread_blocked, id=2856]
+  0x0ecbe9d0 JavaThread "thread applet-JCapplet.class" [_thread_blocked, id=4080]
+  0x0ee77970 JavaThread "Thread-212" [_thread_blocked, id=3240]
+  0x02a629a0 JavaThread "thread applet-JCapplet.class" [_thread_blocked, id=3928]
+  0x0ef5e068 JavaThread "AWT-EventQueue-13" [_thread_blocked, id=2336]
+  0x0ef9fbb8 JavaThread "thread applet-jpowdjpx.class" [_thread_blocked, id=2008]
+  0x0ed67740 JavaThread "thread applet-JCapplet.class" [_thread_blocked, id=2524]
+  0x0ecc20a8 JavaThread "AWT-EventQueue-9" [_thread_blocked, id=748]
+  0x02b82ae0 JavaThread "AWT-EventQueue-0" [_thread_blocked, id=1072]
+  0x02a18460 JavaThread "AWT-Shutdown" [_thread_blocked, id=3476]
+  0x02a06240 JavaThread "traceMsgQueueThread" daemon [_thread_blocked, id=1652]
+  0x029fef00 JavaThread "AWT-Windows" daemon [_thread_in_native, id=1528]
+  0x029f91c8 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=2792]
+  0x02965038 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=1956]
+  0x0288d5f0 JavaThread "CompilerThread0" daemon [_thread_blocked, id=1452]
+  0x02963510 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=2276]
+  0x028a2988 JavaThread "Finalizer" daemon [_thread_blocked, id=2092]
+  0x028a2350 JavaThread "Reference Handler" daemon [_thread_blocked, id=2080]
+  0x01dfdff8 JavaThread "main" [_thread_in_native, id=2508]
+
+Other Threads:
+=>0x0288ca58 VMThread [id=2084]
+  0x029661e0 WatcherThread [id=1448]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x020fb860/0x000003cc] Threads_lock - owner thread: 0x0288ca58
+[0x0288d4d8/0x00000408] Heap_lock - owner thread: 0x0fa2e4e0
+
+Heap
+ def new generation   total 1088K, used 55K [0x050a0000, 0x051c0000, 0x05580000)
+  eden space 1024K,   0% used [0x050a0000, 0x050a0000, 0x051a0000)
+  from space 64K,  87% used [0x051b0000, 0x051bdf78, 0x051c0000)
+  to   space 64K,   0% used [0x051a0000, 0x051a0000, 0x051b0000)
+ tenured generation   total 12080K, used 12004K [0x05580000, 0x0614c000, 0x090a0000)
+   the space 12080K,  99% used [0x05580000, 0x061390f8, 0x06139200, 0x0614c000)
+ compacting perm gen  total 8192K, used 7273K [0x090a0000, 0x098a0000, 0x0d0a0000)
+   the space 8192K,  88% used [0x090a0000, 0x097ba4b8, 0x097ba600, 0x098a0000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00b5d000 	C:\ARQUIV~1\MOZILL~1\FIREFOX.EXE
+0x7c900000 - 0x7c9b4000 	C:\WINDOWS\system32\ntdll.dll
+0x7c800000 - 0x7c8fe000 	C:\WINDOWS\system32\kernel32.dll
+0x600d0000 - 0x60141000 	C:\ARQUIV~1\MOZILL~1\js3250.dll
+0x601a0000 - 0x601c7000 	C:\ARQUIV~1\MOZILL~1\nspr4.dll
+0x77f50000 - 0x77ffb000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x77db0000 - 0x77e41000 	C:\WINDOWS\system32\RPCRT4.dll
+0x71a90000 - 0x71a9a000 	C:\WINDOWS\system32\WSOCK32.dll
+0x71a70000 - 0x71a87000 	C:\WINDOWS\system32\WS2_32.dll
+0x77bf0000 - 0x77c48000 	C:\WINDOWS\system32\msvcrt.dll
+0x71a60000 - 0x71a68000 	C:\WINDOWS\system32\WS2HELP.dll
+0x76b20000 - 0x76b4e000 	C:\WINDOWS\system32\WINMM.dll
+0x77d20000 - 0x77db0000 	C:\WINDOWS\system32\USER32.dll
+0x77e50000 - 0x77e96000 	C:\WINDOWS\system32\GDI32.dll
+0x60350000 - 0x603ba000 	C:\ARQUIV~1\MOZILL~1\xpcom_core.dll
+0x60270000 - 0x60277000 	C:\ARQUIV~1\MOZILL~1\plc4.dll
+0x60280000 - 0x60286000 	C:\ARQUIV~1\MOZILL~1\plds4.dll
+0x7c9c0000 - 0x7d1db000 	C:\WINDOWS\system32\SHELL32.dll
+0x77ea0000 - 0x77f16000 	C:\WINDOWS\system32\SHLWAPI.dll
+0x774c0000 - 0x775fc000 	C:\WINDOWS\system32\ole32.dll
+0x77be0000 - 0x77be8000 	C:\WINDOWS\system32\VERSION.dll
+0x602a0000 - 0x602ba000 	C:\ARQUIV~1\MOZILL~1\smime3.dll
+0x601d0000 - 0x6022b000 	C:\ARQUIV~1\MOZILL~1\nss3.dll
+0x602c0000 - 0x602ff000 	C:\ARQUIV~1\MOZILL~1\softokn3.dll
+0x60300000 - 0x60320000 	C:\ARQUIV~1\MOZILL~1\ssl3.dll
+0x60330000 - 0x60344000 	C:\ARQUIV~1\MOZILL~1\xpcom_compat.dll
+0x76380000 - 0x763c8000 	C:\WINDOWS\system32\comdlg32.dll
+0x773b0000 - 0x774b3000 	C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.2982_x-ww_ac3f9c03\COMCTL32.dll
+0x77100000 - 0x7718c000 	C:\WINDOWS\system32\OLEAUT32.dll
+0x72fb0000 - 0x72fd6000 	C:\WINDOWS\system32\WINSPOOL.DRV
+0x76360000 - 0x7637d000 	C:\WINDOWS\system32\IMM32.DLL
+0x5b1c0000 - 0x5b1f8000 	C:\WINDOWS\system32\uxtheme.dll
+0x67330000 - 0x6735f000 	C:\ARQUIV~1\ARQUIV~1\SYMANT~1\ANTISPAM\asOEHook.dll
+0x7c340000 - 0x7c396000 	C:\WINDOWS\system32\MSVCR71.dll
+0x746e0000 - 0x7472b000 	C:\WINDOWS\system32\MSCTF.dll
+0x77b20000 - 0x77b42000 	C:\WINDOWS\system32\apphelp.dll
+0x75290000 - 0x752be000 	C:\WINDOWS\system32\msctfime.ime
+0x77900000 - 0x779f5000 	C:\WINDOWS\system32\SETUPAPI.dll
+0x76fb0000 - 0x7702f000 	C:\WINDOWS\system32\CLBCATQ.DLL
+0x77030000 - 0x770fd000 	C:\WINDOWS\system32\COMRes.dll
+0x60040000 - 0x6004a000 	C:\ARQUIV~1\MOZILL~1\components\myspell.dll
+0x71a10000 - 0x71a50000 	C:\WINDOWS\system32\mswsock.dll
+0x60b30000 - 0x60b88000 	C:\WINDOWS\system32\hnetcfg.dll
+0x71a50000 - 0x71a58000 	C:\WINDOWS\System32\wshtcpip.dll
+0x76d40000 - 0x76d59000 	C:\WINDOWS\system32\iphlpapi.dll
+0x60010000 - 0x60022000 	C:\ARQUIV~1\MOZILL~1\components\jar50.dll
+0x10000000 - 0x10006000 	C:\Arquivos de programas\Mozilla Firefox\extensions\talkback@mozilla.org\components\qfaservices.dll
+0x016a0000 - 0x016c5000 	C:\Arquivos de programas\Mozilla Firefox\extensions\talkback@mozilla.org\components\FULLSOFT.DLL
+0x76f00000 - 0x76f27000 	C:\WINDOWS\system32\DNSAPI.dll
+0x76f90000 - 0x76f98000 	C:\WINDOWS\System32\winrnr.dll
+0x76f40000 - 0x76f6d000 	C:\WINDOWS\system32\WLDAP32.dll
+0x746b0000 - 0x746da000 	C:\WINDOWS\system32\msimtf.dll
+0x20000000 - 0x202d0000 	C:\WINDOWS\system32\xpsp2res.dll
+0x76350000 - 0x76355000 	C:\WINDOWS\system32\msimg32.dll
+0x60090000 - 0x600c1000 	C:\ARQUIV~1\MOZILL~1\freebl3.dll
+0x60230000 - 0x6026e000 	C:\Arquivos de programas\Mozilla Firefox\nssckbi.dll
+0x60050000 - 0x6005e000 	C:\ARQUIV~1\MOZILL~1\components\spellchk.dll
+0x60290000 - 0x60298000 	C:\ARQUIV~1\MOZILL~1\plugins\npnul32.dll
+0x6d5a0000 - 0x6d5b2000 	C:\Arquivos de programas\Java\jre1.5.0_11\bin\NPOJI610.dll
+0x5f250000 - 0x5f267000 	C:\WINDOWS\system32\OLEPRO32.DLL
+0x6d450000 - 0x6d45c000 	C:\Arquivos de programas\Java\jre1.5.0_11\bin\jpioji.dll
+0x6d430000 - 0x6d445000 	C:\Arquivos de programas\Java\jre1.5.0_11\bin\jpinscp.dll
+0x6d460000 - 0x6d478000 	C:\Arquivos de programas\Java\jre1.5.0_11\bin\jpishare.dll
+0x6d640000 - 0x6d7dd000 	C:\ARQUIV~1\Java\JRE15~2.0_1\bin\client\jvm.dll
+0x6d290000 - 0x6d298000 	C:\ARQUIV~1\Java\JRE15~2.0_1\bin\hpi.dll
+0x76bd0000 - 0x76bdb000 	C:\WINDOWS\system32\PSAPI.DLL
+0x6d610000 - 0x6d61c000 	C:\ARQUIV~1\Java\JRE15~2.0_1\bin\verify.dll
+0x6d310000 - 0x6d32d000 	C:\ARQUIV~1\Java\JRE15~2.0_1\bin\java.dll
+0x6d630000 - 0x6d63f000 	C:\ARQUIV~1\Java\JRE15~2.0_1\bin\zip.dll
+0x6d000000 - 0x6d16a000 	C:\Arquivos de programas\Java\jre1.5.0_11\bin\awt.dll
+0x73710000 - 0x73759000 	C:\WINDOWS\system32\ddraw.dll
+0x73b70000 - 0x73b76000 	C:\WINDOWS\system32\DCIMAN32.dll
+0x6d240000 - 0x6d290000 	C:\Arquivos de programas\Java\jre1.5.0_11\bin\fontmanager.dll
+0x6d1f0000 - 0x6d203000 	C:\Arquivos de programas\Java\jre1.5.0_11\bin\deploy.dll
+0x771b0000 - 0x7727e000 	C:\WINDOWS\system32\WININET.dll
+0x0db20000 - 0x0db29000 	C:\WINDOWS\system32\Normaliz.dll
+0x6e850000 - 0x6e895000 	C:\WINDOWS\system32\iertutil.dll
+0x61410000 - 0x61534000 	C:\WINDOWS\system32\urlmon.dll
+0x77a60000 - 0x77af5000 	C:\WINDOWS\system32\CRYPT32.dll
+0x77b00000 - 0x77b12000 	C:\WINDOWS\system32\MSASN1.dll
+0x6d5c0000 - 0x6d5e4000 	C:\Arquivos de programas\Java\jre1.5.0_11\bin\RegUtils.dll
+0x7d1e0000 - 0x7d492000 	C:\WINDOWS\system32\msi.dll
+0x769a0000 - 0x76a54000 	C:\WINDOWS\system32\USERENV.dll
+0x6d4d0000 - 0x6d4e3000 	C:\Arquivos de programas\Java\jre1.5.0_11\bin\net.dll
+0x76fa0000 - 0x76fa6000 	C:\WINDOWS\system32\rasadhlp.dll
+0x6d1c0000 - 0x6d1e3000 	C:\Arquivos de programas\Java\jre1.5.0_11\bin\dcpr.dll
+0x6d4f0000 - 0x6d4f9000 	C:\Arquivos de programas\Java\jre1.5.0_11\bin\nio.dll
+0x6d3d0000 - 0x6d3ef000 	C:\Arquivos de programas\Java\jre1.5.0_11\bin\jpeg.dll
+0x75d70000 - 0x75e01000 	C:\WINDOWS\system32\mlang.dll
+0x72cd0000 - 0x72cd9000 	C:\WINDOWS\system32\wdmaud.drv
+0x76c10000 - 0x76c3e000 	C:\WINDOWS\system32\WINTRUST.dll
+0x76c70000 - 0x76c98000 	C:\WINDOWS\system32\IMAGEHLP.dll
+0x72cc0000 - 0x72cc8000 	C:\WINDOWS\system32\msacm32.drv
+0x77bc0000 - 0x77bd5000 	C:\WINDOWS\system32\MSACM32.dll
+0x77bb0000 - 0x77bb7000 	C:\WINDOWS\system32\midimap.dll
+0x77f20000 - 0x77f31000 	C:\WINDOWS\system32\Secur32.dll
+0x767d0000 - 0x767f7000 	C:\WINDOWS\system32\schannel.dll
+0x5bcb0000 - 0x5bd04000 	C:\WINDOWS\system32\NETAPI32.dll
+
+VM Arguments:
+jvm_args: -Xbootclasspath/a:C:\ARQUIV~1\Java\JRE15~2.0_1\lib\deploy.jar;C:\ARQUIV~1\Java\JRE15~2.0_1\lib\plugin.jar -Xmx64m -Djavaplugin.maxHeapSize=64m -Xverify:remote -Djavaplugin.version=1.5.0_11 -Djavaplugin.nodotversion=150_11 -Dbrowser=sun.plugin -DtrustProxy=true -Dapplication.home=C:\ARQUIV~1\Java\JRE15~2.0_1 -Djava.protocol.handler.pkgs=sun.plugin.net.protocol -Djavaplugin.vm.options=-Djava.class.path=C:\ARQUIV~1\Java\JRE15~2.0_1\classes -Xbootclasspath/a:C:\ARQUIV~1\Java\JRE15~2.0_1\lib\deploy.jar;C:\ARQUIV~1\Java\JRE15~2.0_1\lib\plugin.jar -Xmx64m -Djavaplugin.maxHeapSize=64m -Xverify:remote -Djavaplugin.version=1.5.0_11 -Djavaplugin.nodotversion=150_11 -Dbrowser=sun.plugin -DtrustProxy=true -Dapplication.home=C:\ARQUIV~1\Java\JRE15~2.0_1 -Djava.protocol.handler.pkgs=sun.plugin.net.protocol  vfprintf
+java_command: <unknown>
+Launcher Type: generic
+
+Environment Variables:
+CLASSPATH=.;C:\Arquivos de programas\Java\jre1.5.0_09\lib\ext\QTJava.zip
+PATH=C:\ARQUIV~1\Java\JRE15~2.0_1\bin;C:\Arquivos de programas\Mozilla Firefox;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32\WBEM;C:\Arquivos de programas\MiKTeX 2.5\miktex\bin;C:\Arquivos de programas\QuickTime\QTSystem\;C:\Arquivos de programas\Arquivos comuns\Adobe\AGL;.
+USERNAME=Henry
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 15 Model 44 Stepping 2, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows XP Build 2600 Service Pack 2
+
+CPU:total 1 (cores per cpu 1, threads per core 1) family 15 model 44 stepping 2, cmov, cx8, fxsr, mmx, sse, sse2, sse3, mmxext, 3dnowext, 3dnow
+
+Memory: 4k page, physical 2096432k(1397072k free), swap 4034828k(3476756k free)
+
+vm_info: Java HotSpot(TM) Client VM (1.5.0_11-b03) for windows-x86, built on Dec 15 2006 01:16:12 by "java_re" with MS VC++ 6.0
+
